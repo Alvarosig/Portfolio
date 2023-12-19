@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header .dots img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.header .photo {
+    width: 200px;
+    /* height: 200px; */
+    border-radius: 50%;
+}
+
+.header .title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-left: 0.8rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.information .job::before {
+    background-image: url('../img/icons/user.svg');
+}
+
+.information .location::before {
+    background-image: url('../img/icons/place.svg');
+}
+
+.information .phone::before {
+    background-image: url('../img/icons/phone.svg');
+}
+
+.information .email::before {
+    background-image: url('../img/icons/email.svg');
+}
+
+@media only screen and (min-width: 768px){
+    .header {
+        flex-direction: row;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8rem;
+    }
+    
+    main {
+        width: 75dvw;
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+}

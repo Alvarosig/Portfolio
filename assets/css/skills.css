@@ -1,0 +1,59 @@
+.accordeon .content .section-skill {
+    display: flex;
+    flex-direction: row;
+}
+
+.content .left, .content .right {
+    flex: 1; 
+}
+
+.content .left h3, .content .right h3 {
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.content .right h3 {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    padding: 1rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.soft {
+    column-count: 2; 
+    column-gap: 2rem; 
+}
+
+.soft li {
+    break-inside: avoid;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 660px){
+    .accordeon .content .section-skill {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .soft {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+}
