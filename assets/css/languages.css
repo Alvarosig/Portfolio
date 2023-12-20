@@ -3,22 +3,26 @@
 }
 
 .languages {
-    margin-left: 1rem;
     text-align: left;
     padding: 0.8rem 0;
     color: white;
 }
 
+.bar {
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
 .portuguese {
-    background-color: #480CA8;
+    background-color: #3730a3;
 }
 .english {
     width: 80%; 
-    background-color: #480CA8;
+    background-color: #3730a3;
 }
 .spanish {
     width: 30%;  
-    background-color: #480CA8;
+    background-color: #3730a3;
 }
 
 .portuguese, .english, .spanish {
