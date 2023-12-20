@@ -1,20 +1,32 @@
+.container-lang {
+    width: 100%;
+}
+
 .languages {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin-left: 1rem;
+    text-align: left;
+    padding: 0.8rem 0;
+    color: white;
 }
 
-.languages li {
-    padding: 0 1rem 1rem;
-    font-weight: 700;
-    font-size: 1rem;
+.portuguese {
+    background-color: #480CA8;
+}
+.english {
+    width: 80%; 
+    background-color: #480CA8;
+}
+.spanish {
+    width: 30%;  
+    background-color: #480CA8;
 }
 
-.languages li::before {
+.portuguese, .english, .spanish {
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.languages::before {
     content: "";
     display: inline-block;
     width: 1.2rem;
